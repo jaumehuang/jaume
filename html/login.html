@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/rest.css" />
+		<link rel="stylesheet" href="../css/login.css" />
+		<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" />
+	    <link rel="stylesheet" href="../css/footer.css" />
+	    <script type="text/javascript" src="../js/jquery-2.1.1.min.js" ></script>
+	     <!--2.引入插件-->
+		 <script type="text/javascript" src="../js/jquery.validate.js" ></script>
+		 <!-- 3.添加语言包 -->
+		<script type="text/javascript" src="../js/jquery.validate.messages_zh.js"></script>
+		
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+	  	<script type="text/javascript">
+	    	$(function(){
+	    	   
+
+//                 $.cookie('the_cookie', '你好')
+//	    		   var bb= $.cookie('the_cookie'); // cookie存在 => 'the_value'
+//	    		    console.log(bb)    
+	    		
+	    		
+	    		var fg=false;
+	    		
+	    		$(".foot").load("footer.html");
+	    		 //jquery.validate
+	             
+	             $("form").validate({
+	             	
+	             	rules:{
+		             		user:{
+		             			
+		             			required:true,rangelength:[11,11]
+		             		  
+		             	     },
+		             	     password:{required:true,rangelength:[8,20]},
+		             	     passwordto:{required:true,equalTo:"#password"}
+	                    },
+	                messages:{
+	                	// user:{required:'必填',minlength:'至少输入三个字符'}
+	                	user:{required:"必填",rangelength:"输入11位号码"},
+                        password:{required:"必填",rangelength:'输入8~20个字符'},
+                        passwordto:{required:"必填",same:'重新输入密码'}
+	                }
+	             
+	             })
+	             
+	             $(".checkbox").blur(function(){
+	             	
+	             	$(this).attr("checked","checked");
+	             	  
+	             	  
+	             	
+	             });
+	             	  
+	             	  
+	             
+	          
+	             	  $("#btn").click(function(){
+	              	  if($("form").valid()&&fg&&$(".checkbox").prop("checked")){
+	              	  	
+	              	  	 if($(".fn-tinput").val()==$.cookie("name")){
+	              	  	 	
+	              	  	 	alert("该用户已被注册");
+	              	  	
+	              	  	 }
+	              	  	//验证后保存信息在cooking中；
+	              	       console.log("正确");
+	              	      var tt=confirm("是否进入登录页面")
+	              	      if(tt){
+	              	      	
+	              	      	window.location.href="landing.html";
+	              	      }
+	              	      
+	              	      var name=$(".fn-tinput").val() ; 
+	              	      var password=$("#password").val() ;
+
+	              	      $.cookie("name",name, { expires: 7, path: '/' })//保存注册信息
+	              	      $.cookie("password",password, { expires: 7, path: '/' })//保存注册信息
+	              	      
+//	              	       $.cookie('the_cookie'); // cookie存在 => 'the_value'//取出
+	              	   
+	              	       
+	                   }else{
+	                   	alert("亲，注册失败！")
+	                   }
+	              })
+	          
+	              //随机数
+	              
+	              $(".ptext").click(function(){
+	              	var str=""
+	              	for(var i=0;i<4;i++){
+	              		str+=Math.floor(Math.random()*10)
+	              	}
+	              	 $(this).text(str);
+	              })
+	              
+	              $(".a").click(function(e){
+	              	var str=""
+	              	for(var i=0;i<4;i++){
+	              		str+=Math.floor(Math.random()*10)
+	              	}
+	              	 $(".ptext").text(str);
+	              	 
+	              	 e.preventDefault();
+	              })
+	              
+	              //判断验证码
+	              $(".code").blur(function(){
+	              	  
+	              	  if($(this).val()==$(".ptext").text()){
+	              	     
+	              	  	$("b").text("");
+	              	  	fg=true;
+	              	  	
+	              	  }else{
+	              	  	$("b").text("输入正确的验证码")
+	              	  }
+	              	
+	              })
+	              
+	              
+	              //安全强度检测
+	              
+                  // 每1ms检测安全强度
+	              
+	              var time=setInterval(function(){
+	              	
+	              	var password_3=$("#password").val()
+	              
+	              if(password_3.length>=8&&password_3.length<10){
+	              	
+	              	$(".check li").eq(0).css("background","red").siblings().css("background","gray")
+	              }else if(password_3.length>=10&&password_3.length<14){
+	              	
+	              	$(".check li").eq(1).css("background","yellow").siblings().css("background","gray")
+	              }else if(password_3.length>=14&&password_3.length<=20){
+	              	
+	              	$(".check li").eq(2).css("background","green").siblings().css("background","gray")
+	              }
+	              	
+	              	
+	              	
+	              },50)
+	              
+	              
+	              
+	              
+	             
+	            });
+	            
+	  	</script>
+	
+	</head>
+   
+	<body id="login">
+		<div id="login_a">
+
+			<div class="header">
+				<a href="#" class="lg">
+					<img src="../img/login/logo.png" />
+					<span>欢迎注册</span>
+				</a>
+  
+			</div>
+
+			<!--main 主页-->
+
+			<div class="tabBox_clear">
+				<div class="left">
+					<span class='private'>个人用户 </span>
+					<span class="company">企业用户</span>
+				</div>
+
+				<div class="shoplogin">
+					已有账号，立即
+					<a href="#">
+						登录
+					</a>
+				</div>
+			</div>
+
+			<!--main 主页-->
+			<div class="reg_main">
+				<div class="regTab">
+					<div class="individualUserBg">
+						<div class="demobox" >
+							<form  class="bl-form bl-formhor" id="jsForm" >
+								<ul >
+
+									<li class="bl-form-group">
+										<span>用户名：</span>
+										<div class="controls">
+											<input type="text" value="" name="user"  class="fn-tinput" placeholder="请使用手机号码注册"  />
+										    <label for="user" class="error" style="color: red;" ></label>
+										</div>
+										
+									</li>
+									<li class="bl-form-group">
+										<span>登录密码：</span>
+										<div class="controls">
+											<input class="fn-tinput" type="password" name="password" value="" placeholder="登录密码" id="password" >
+										     <label for="password" class="error" style="color: red;" ></label>
+										</div>
+									</li>
+									<li class="safety">
+										<span class="aq">密码强度</span>
+										<ul class="check">
+											<li>弱</li>
+											<li>中</li>
+											<li>强</li>
+											
+										</ul>
+									</li>
+									<li class="bl-form-group">
+										<span>确认密码：</span>
+										<div class="controls">
+											<input class="fn-tinput" type="password" name="passwordto" value="" placeholder="确认密码" required equalTo="#password">
+										    <label for="passwordto" class="error" style="color: red;" ></label>
+										</div>
+									</li>
+									<li>
+										<ul class="codecheck">
+											<li>
+												<span>验证码：</span>
+												<input type="text" class="code"/>
+												
+											</li>
+											<li>
+												<span class="ptext">1245</span>
+											</li>
+											<li>
+												<span class="ptext2">看不清?<a href="#" class="a">换一换</a></span>
+												<b style="color: red;display: inline-block;margin-top:4px;margin-left:4px ;"></b>
+											</li>
+											
+										</ul>
+										
+										
+										
+									</li>
+									
+									<li class="agree">
+										
+										<input type="checkbox" class="checkbox"  />
+										<span  class="agreeto">我已阅读并同意<a href="#">《顺丰优选用户注册协议》</a></span>
+									</li>
+									<li class="bl-form-group bl-form-btns">
+										<label class="fn-vhid">注册：</label>
+										<div class="controls">
+											<button  type="button" id="btn">立即注册</button>
+											
+										</div>
+									</li>
+								</ul>
+							
+							</form>
+						</div>
+
+					</div>
+					<div class="bg">
+						<a href="#">
+							<img src="../img/login/pic2.jpg">
+						</a>
+					</div>
+					
+					
+				</div>
+				
+				
+				
+				
+			</div>
+			<div class="ui">
+					<span></span>
+					 <a href="#"> 
+					 	了解更多&gt;&gt;
+					 </a>
+				</div>
+				<div class="foot"></div>
+		</div>
+		
+		
+	</body>
+
+</html>

@@ -1,0 +1,216 @@
+#login_a .header{
+	
+	height:96px;
+	width: 1200px;
+	margin:0 auto ;
+	
+
+}
+#login_a .header .lg  img{
+	height:75px;
+	width:301px;
+	padding-top:10px;
+	display: block;
+	float:left;
+}
+#login_a .header .lg  span{
+	
+	width:96px;
+	height:70px;
+	margin: 0 10px;
+	padding-left:3px;
+	font-size:23px ;
+	display: block;
+	float:left;
+	color: #515151;
+	text-align: center;
+	line-height: 70px;
+	margin-top:10px ;
+}
+
+#login_a .login_main{
+	
+	height:500px;
+	width:1200px;
+	margin: 0 auto;
+	
+}
+#login_a .login_main .pic{
+	width:540px;
+	height:390px;
+	float: left;
+	
+}
+#login_a .login_main .pic img{
+	display: block;
+	height:340px;
+	width:520px;
+	padding-top:32px ;
+}
+ #login_a .login{
+ 	width:400px;
+ 	height:448px;
+ 	float: left;
+ 	
+ 	margin-left: 20px;
+ }
+ 
+ #login_a  .login_header{
+ 	
+ 	height:50px;
+ 	width:400px;
+ 	
+ }
+  #login_a  .login_header span{
+  	height:50px;
+  	width:80px;
+  	display: block;
+  	float: left;
+  	line-height: 50px;
+  	text-align: center;
+  }
+  #login_a  .login_header  a{
+  	height:25px;
+  	width:75px;
+  	display: block;
+  	margin-top:12px ;
+  	float:right;
+  	border: 1px solid gray;
+  	background:#FFF4F0;
+  	color: gray;
+  	line-height: 25px;
+  	text-align: center;
+  }
+ #login_a  .logincon{
+ 	height:396px;
+ 	width:398px;
+ 	border:1px solid gray ;
+ }
+ #login_a  .logincon .loginnav{
+ 	height:31px;
+ 	width:398px;
+ 	
+ }
+ #login_a  .logincon .loginnav li{
+ 	float: left;
+ 	height:31px;
+ 	width:132px;
+ 	line-height: 31px;
+ 	text-align: center;
+ }
+ #login_a  .logincon .landing{
+ 	
+ 	height:279px;
+ 	width:324px;
+ 	margin-left:33px ;
+ 	margin-top:25px;
+ 
+
+ }
+#login_a  .logincon .start{
+	    padding-bottom:10px ;
+		border-bottom:1px solid gray ;
+}
+	
+ .landing ul li {
+ 	margin-bottom: 20px;
+ }
+.landing ul li label{
+	height:37px;
+	width:321px;
+	display: block;
+	background: #fff;
+	border: 1px solid darkgray;
+}
+.landing ul li label input{
+	height: 37px;
+	width:274px;
+	border: none;
+	outline: none;
+	
+}
+.landing ul li  .safety{
+	height:37px;
+	width: 107px;
+	float: left;
+}
+.landing ul li  .check{
+	height:39px;
+	width:107px;
+	float:left;
+	background:#888285;
+	border: 1px solid #000;
+	margin-top:1px ;
+	line-height:39px ;
+	text-align: center;
+	margin-left:10px ;
+	font-size:20px ;
+}
+	
+}
+.landing ul .last{
+	margin-top: 20px;
+}
+
+.landing ul li .name{
+	height:38px;
+	width:30px;
+	display: inline-block;
+}
+.landing ul li .password{
+	height:38px;
+	width:30px;
+	display: inline-block;
+}
+
+.landing ul .btn p a{
+	display: block;
+	margin-left:266px ;
+	margin-top:7px ;
+	width:100px;
+	height:12px;
+	color: gray;
+	
+}
+.landing ul .btn .btndel{
+	
+	height:39px;
+	width:260px;
+	background:url(../img/login/reg_btn.jpg) no-repeat;
+	line-height: 39px;
+	text-align: center;
+	color:#fff;
+	font-size:20px;
+	outline: none;
+	margin-left:30px ;
+	margin-top:16px ;
+	
+}
+.logincon .blink{
+	
+	height: 56px;
+	width:398px;
+	margin-left:32px ;
+	margin-top:14px ;
+	
+}
+.logincon .blink p{
+	font-size:10px;
+	}
+.logincon .blink ul li{
+	
+	float: left;
+	margin-right:10px ;
+	
+	font-size:10px ;
+	
+}
+.logincon .blink ul li a{
+	
+	color: #6C9F8E;
+	
+}
+		
+	
+	
+	

@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>顺风优选</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/rest.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../js/toppromo.js"></script>
+		<script type="text/javascript" src="../js/TopMenu.js"></script>
+		<script type="text/javascript" src="../js/Nav.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/Carousel.js" ></script>
+		<script type="text/javascript" src="../js/shoppingcar.js" ></script>
+		<script type="text/javascript" src="../js/jquery.countdown.js" ></script>
+	<!--	<script type="text/javascript" src="js/jquery.js" ></script>-->
+		
+		<script type="text/javascript">
+			$(function() {
+				$(".foot").load("footer.html?="+Math.random());				
+				$(".header").load("header.html?="+Math.random());	
+				toppromo();
+				shoppingcar();
+				Countdown.init();
+				Carousel();
+				
+			})
+		</script>
+	</head>
+
+	<body>
+	    <div class="header"></div>
+		<!--slide show 开始-->
+                           
+		<div id="show">   
+    
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<!--<li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>-->
+					<!--<li data-target="#myCarousel" data-slide-to="5"></li>
+					<li data-target="#myCarousel" data-slide-to="6"></li>
+					<li data-target="#myCarousel" data-slide-to="7"></li>-->
+				</ol>
+			      <!--下标导航-->
+			      <ul class="nav-list">
+			      	<li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">1</a></li>
+			      	<li data-target="#myCarousel" data-slide-to="1" ><a href="#">2</a></li>
+			      	<li data-target="#myCarousel" data-slide-to="2" ><a href="#">3</a></li>
+			      	<li data-target="#myCarousel" data-slide-to="3" ><a href="#">4</a></li>
+			      	<li data-target="#myCarousel" data-slide-to="4" ><a href="#">5</a></li>
+			      	<li data-target="#myCarousel" data-slide-to="5" ><a href="#">6</a></li>
+			      	<li data-target="#myCarousel" data-slide-to="6" ><a href="#">7</a></li>
+			      	<li data-target="#myCarousel" data-slide-to="7" ><a href="#">8</a></li>
+			      </ul>
+			     
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="../img/index/show1.jpg" alt="First slide">
+					</div>
+					<div class="item">
+						<img src="../img/index/show2.jpg" alt="Second slide">
+					</div>
+					<div class="item">
+						<img src="../img/index/show3.jpg" alt="Third slide">
+					</div>
+					<div class="item">
+						<img src="../img/index/show4.jpg" alt="Four slide">
+					</div>
+					<div class="item">
+						<img src="../img/index/show5.jpg" alt="Five slide">
+					</div>
+					<div class="item">
+						<img src="../img/index/show6.jpg" alt="Six slide">
+					</div>
+					<div class="item">
+						<img src="../img/index/show5.jpg" alt="Seven slide">
+					</div>
+					<div class="item">
+						<img src="../img/index/show5.jpg" alt="Eight slide">
+					</div>
+				</div>
+				<!-- 轮播（Carousel）导航 -->
+				<!--<a class="carousel-control left" href="#myCarousel" data-slide="prev" style="display: block;height: 40px;width:100px;background:red;position: absolute;left:0;top:100px">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next" style="display: block;height: 40px;width:100px;background:red;position: absolute;left:600px;top:100px">&rsaquo;</a>-->
+                <!--<div class="indexbg" id="indexbg">
+				<dl >
+					<dd style="width: 1423px; background: rgb(111, 181, 67);"></dd>
+					<dd style="width: 1423px; background: rgb(213, 42, 41);"></dd>
+					<dd style="width: 1423px; background: rgb(4, 189, 247);"></dd>
+					<dd style="width: 1423px; background: rgb(227, 224, 219);"></dd>
+					<dd style="width: 1423px; background: rgb(253, 65, 54);"></dd>
+					<dd style="width: 1423px; background: rgb(253, 238, 249);"></dd>
+					<dd style="width: 1423px; background: rgb(77, 64, 52);"></dd>
+					<dd style="width: 1423px;"></dd>
+				</dl>
+			</div>-->
+			 
+			
+			 
+			 
+			</div>
+			 <ul id="showimg">
+				 
+				 <li>
+				 	<a href="#">
+				 		<img src="../img/index/showimg.jpg" />
+				 	</a>
+				 </li>
+				  <li>
+				 	<a href="#">
+				 		<img src="../img/index/showimg.jpg" />
+				 	</a>
+				 </li>
+				  <li>
+				 	<a href="#">
+				 		<img src="../img/index/showimg.jpg" />
+				 	</a>
+				 </li>
+				
+			</ul>
+			 
+			
+			
+
+		</div>
+
+		<!--slide show 结束-->
+		<!--indexW mt1开始-->
+		<div id="indexW">
+		
+			<div class="Mandatory">
+				  <div class="beatiful">
+				  	  <div class="beatifulLeft">
+				  	  	   <h2>优选必买
+				  	  	      <span></span>
+				  	  	   </h2>
+				  	  	   <ul class="bt">
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/beatiful1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/beatiful1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/beatiful1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/beatiful1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+                                
+                                	<li><a href="#">
+					  	  	   		<img src="../img/index/btnsmall.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/btnsmall.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/btnsmall.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/btnsmall.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+				  	  	   </ul>
+				  	  	   
+				  	  	  
+				  	  </div>
+				  	   <div class="beatifulright">
+				  	  	   <div class="beatifulimg">
+				  	  	   	 <a href="#"><img src="../img/index/newimg.jpg" </a>
+				  	  	   </div>
+				  	  	   <div class="newimg">
+				  	  	   	   <div class="retitle">
+				  	  	   	   	   <h3>最新动态</h3>
+				  	  	   	   	   <a href="#" class="more">更多&gt;</a>
+				  	  	   	   </div>
+				  	  	   	   <ul>
+				  	  	   	   	  <li><a href="#">金龙鱼中奖名单回访公告</a></li>
+				  	  	   	   	  <li><a href="#">金龙鱼中奖名单回访公告</a></li>
+				  	  	   	   	  <li><a href="#">金龙鱼中奖名单回访公告</a></li>
+				  	  	   	   	  <li><a href="#">金龙鱼中奖名单回访公告</a></li>
+				  	  	   	   </ul>
+				  	  	   </div>
+				  	  </div>
+				  </div>
+			</div>
+		
+		</div>
+		<!--indexW mt1结束-->
+		
+		<!--indexW mt2 开始-->
+		
+		<div id="indexW_mt2" >
+			<div class="indexW_mt2 ">
+				<div class="timedbuy">
+					<div class="ttop">
+						<span class="clock"></span>
+						<p class="t_jd">限时抢购</p>
+						<p class="ttl">还剩</p>
+						
+						 <div class="time">
+							<ul>
+								<li class="num"><span class="static old">0</span></li>
+								<li class="num"><span class="static old">0</span></li>
+								<li><span>时</span></li>
+								<li class="num"><span class="static old">0</span></li>
+								<li class="num"><span class="static old">0</span></li>
+								<li><span>分</span></li>
+								<li class="num"><span class="static old">0</span></li>
+								<li class="num"><span class="static old">0</span></li>
+								<li><span>秒</span></li>
+								<li><span>   结束</span></li>
+							</ul>
+						</div>
+						<p class="next">下期预告</p>
+					</div>
+					<div class="tbList">
+						<ul class="nowCon">
+							<li>
+								<div class="pimg">
+									<a href="#">
+										<img src="../img/index/timeImg.jpg" 
+									</a>
+								</div>
+								<div class="title-a">
+									<a href="#">富士屋 萨摩黑糖饴糖 80g</a>
+								</div>
+								<div class="pt-price">
+									<div class="fl_p1">￥599</div>
+									<div class="fr_p2">￥668</div>
+								</div>
+								<div class="price"></div>
+								<a href="#" class="rushBuy">抢购</a>
+							
+							</li>
+							
+							<li>
+								<div class="pimg">
+									<a href="#">
+										<img src="../img/index/timeImg.jpg" 
+									</a>
+								</div>
+								<div class="title-a">
+									<a href="#">富士屋 萨摩黑糖饴糖 80g</a>
+								</div>
+								<div class="pt-price">
+									<div class="fl_p1">￥599</div>
+									<div class="fr_p2">￥668</div>
+								</div>
+								<div class="price"></div>
+								<a href="#" class="rushBuy">抢购</a>
+							
+							</li>
+							
+							<li>
+								<div class="pimg">
+									<a href="#">
+										<img src="../img/index/timeImg.jpg" 
+									</a>
+								</div>
+								<div class="title-a">
+									<a href="#">富士屋 萨摩黑糖饴糖 80g</a>
+								</div>
+								<div class="pt-price">
+									<div class="fl_p1">￥599</div>
+									<div class="fr_p2">￥668</div>
+								</div>
+								<div class="price"></div>
+								<a href="#" class="rushBuy">抢购</a>
+							
+							</li>
+							
+							<li>
+								<div class="pimg">
+									<a href="#">
+										<img src="../img/index/timeImg.jpg" 
+									</a>
+								</div>
+								<div class="title-a">
+									<a href="#">富士屋 萨摩黑糖饴糖 80g</a>
+								</div>
+								<div class="pt-price">
+									<div class="fl_p1">￥599</div>
+									<div class="fr_p2">￥668</div>
+								</div>
+								<div class="price"></div>
+								<a href="#" class="rushBuy">抢购</a>
+							
+							</li>
+							
+							<li>
+								<div class="pimg">
+									<a href="#">
+										<img src="../img/index/timeImg.jpg" 
+									</a>
+								</div>
+								<div class="title-a">
+									<a href="#">富士屋 萨摩黑糖饴糖 80g</a>
+								</div>
+								<div class="pt-price">
+									<div class="fl_p1">￥599</div>
+									<div class="fr_p2">￥668</div>
+								</div>
+								<div class="price"></div>
+								<a href="#" class="rushBuy">抢购</a>
+							
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="rSide2">
+					<a href="#"><img src="../img/index/rSide2img.jpg" </a>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!--indexW mt2 结束-->
+		
+		<!--indexW mt3 开始-->
+		<div id="indexW_mt3">
+			<div class="indexW_mt3">
+				<a href="#">
+					<img src="../img/index/indexW_mt3Img.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<!--indexW mt3 结束-->
+		
+		<!--indexW mt4 ie6 fresh 开始-->
+		
+		<div id="indexW_mt4">
+			
+			<div class="indexW_mt4">
+		         <div class="category">
+		         	<ul class="mTitle">
+						<li>
+							<div class="cir"></div>
+							<h2>
+								<em></em>
+								<a  class="trackref" href="#" >水果</a>&nbsp;&nbsp;
+								<a  class="trackref" href="#" >蔬菜</a>
+							</h2>
+						</li>
+					</ul>
+					<div class="Cont"> 
+						<a href="#">
+							<img src="../img/index/huogou.jpg" />
+						</a>
+					</div>
+		         </div>
+		         <div class="sfRight">
+		         	  <div class="subCont">
+		         	  	   <ul class="pList">
+		         	  	   	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   			
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+                                
+                                	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+		         	  	   </ul>
+		         	  </div>
+		         	  
+		         	  <div class="redge">
+		         	  	    <ul class="rHot">
+		         	  	    	<li>
+		         	  	    		<a href="#">石榴</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">石榴</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">石榴</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">石榴</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">石榴</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">石榴</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">石榴</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">石榴</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">石榴</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    </ul>
+		         	  	    
+		         	  	    <div class="rimg">
+		         	  	    	<a href="#" class="trackref"><img src="../img/index/trackrefImg1.jpg"></a>
+		         	  	        <div class="rbutton">
+		         	  	        	<a ></a>
+		         	  	        </div>
+		         	  	    </div>
+		         	  	    
+		         	  </div>
+		         </div>
+		    </div>
+	
+		</div>
+	
+		<!--indexW mt4 ie6 fresh 结束-->
+		
+	     <!--indexW mt5 开始-->
+		<div id="indexW_mt3">
+			<div class="indexW_mt3">
+				<a href="#">
+					<img src="../img/index/indexW_mt5Img.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<!--indexW mt5 结束-->
+		
+		<!--indexW mt6 ie6 fresh 开始-->
+		
+		<div id="indexW_mt4">
+			
+			<div class="indexW_mt4">
+		         <div class="category">
+		         	<ul class="mTitle" style="background:#FA648C">
+						<li>
+							<div class="cir"></div>
+							<h2>
+								<em></em>
+								<a  class="trackref" href="#" >肉类</a>&nbsp;&nbsp;
+								<a  class="trackref" href="#" >海鲜</a>
+							</h2>
+						</li>
+					</ul>
+					<div class="Cont"> 
+						<a href="#">
+							<img src="../img/index/meatfood.jpg" />
+						</a>
+					</div>
+		         </div>
+		         <div class="sfRight">
+		         	  <div class="subCont">
+		         	  	   <ul class="pList">
+		         	  	   	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   			
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+                                
+                                	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg1_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+		         	  	   </ul>
+		         	  </div>
+		         	  
+		         	  <div class="redge">
+		         	  	    <ul class="rHot">
+		         	  	    	<li>
+		         	  	    		<a href="#">羊肉</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">羊肉</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">羊肉</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">羊肉</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">羊肉</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">羊肉</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">羊肉</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">羊肉</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">羊肉</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    </ul>
+		         	  	    
+		         	  	    <div class="rimg">
+		         	  	    	<a href="#" class="trackref"><img src="../img/index/trackrefImg2.jpg"></a>
+		         	  	        <div class="rbutton">
+		         	  	        	<a ></a>
+		         	  	        </div>
+		         	  	    </div>
+		         	  	    
+		         	  </div>
+		         </div>
+		    </div>
+	
+		</div>
+    
+		<!--indexW mt6 ie6 fresh 结束-->
+		
+		
+		<!--indexW mt7 开始-->
+		<div id="indexW_mt3">
+			<div class="indexW_mt3">
+				<a href="#">
+					<img src="../img/index/indexW_mt7Img.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<!--indexW mt7 结束-->
+		
+		
+		<!--indexW mt8 ie6 fresh 开始-->
+		  <div id="indexW_mt4">
+			
+			<div class="indexW_mt4">
+		         <div class="category">
+		         	<ul class="mTitle" style="background:#FA648C">
+						<li>
+							<div class="cir"></div>
+							<h2>
+								<em></em>
+								<a  class="trackref" href="#" >熟食</a>&nbsp;&nbsp;
+								<a  class="trackref" href="#" >蛋奶</a>
+							</h2>
+						</li>
+					</ul>
+					<div class="Cont"> 
+						<a href="#">
+							<img src="../img/index/milk.jpg" />
+						</a>
+					</div>
+		         </div>
+		         <div class="sfRight">
+		         	  <div class="subCont">
+		         	  	   <ul class="pList">
+		         	  	   	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg2_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   			
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg2_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg2_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg2_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+                                
+                                	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg2_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg2_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg2_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg2_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+		         	  	   </ul>
+		         	  </div>
+		         	  
+		         	  <div class="redge">
+		         	  	    <ul class="rHot">
+		         	  	    	<li>
+		         	  	    		<a href="#">低温奶</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">低温奶</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">低温奶</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">低温奶</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">低温奶</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">低温奶</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">低温奶</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">低温奶</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">低温奶</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    </ul>
+		         	  	    
+		         	  	    <div class="rimg">
+		         	  	    	<a href="#" class="trackref"><img src="../img/index/trackrefImg3.jpg"></a>
+		         	  	        <div class="rbutton">
+		         	  	        	<a ></a>
+		         	  	        </div>
+		         	  	    </div>
+		         	  	    
+		         	  </div>
+		         </div>
+		    </div>
+	
+		</div>
+		
+		<!--indexW mt8 ie6 fresh 结束-->
+		
+		<!--indexW mt9 开始-->
+		<div id="indexW_mt3">
+			<div class="indexW_mt3">
+				<a href="#">
+					<img src="../img/index/indexW_mt8Img.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<!--indexW mt9 结束-->
+		
+		
+		<!--indexW mt10 ie6 fresh 开始-->
+		  <div id="indexW_mt4">
+			
+			<div class="indexW_mt4">
+		         <div class="category">
+		         	<ul class="mTitle" style="background:#FF6C00">
+						<li>
+							<div class="cir"></div>
+							<h2>
+								<em></em>
+								<a  class="trackref" href="#" >粮油</a>&nbsp;&nbsp;
+								<a  class="trackref" href="#" >干货</a>
+							</h2>
+						</li>
+					</ul>
+					<div class="Cont"> 
+						<a href="#">
+							<img src="../img/index/milk.jpg" />
+						</a>
+					</div>
+		         </div>
+		         <div class="sfRight">
+		         	  <div class="subCont">
+		         	  	   <ul class="pList">
+		         	  	   	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg3_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   			
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg3_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg3_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg3_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+                                
+                                	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg3_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg3_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg3_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg3_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+		         	  	   </ul>
+		         	  </div>
+		         	  
+		         	  <div class="redge">
+		         	  	    <ul class="rHot">
+		         	  	    	<li>
+		         	  	    		<a href="#">大米</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">大米</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">大米</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">大米</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">大米</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">大米</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">大米</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">大米</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">大米</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    </ul>
+		         	  	    
+		         	  	    <div class="rimg">
+		         	  	    	<a href="#" class="trackref"><img src="../img/index/trackrefImg4.jpg"></a>
+		         	  	        <div class="rbutton">
+		         	  	        	<a ></a>
+		         	  	        </div>
+		         	  	    </div>
+		         	  	    
+		         	  </div>
+		         </div>
+		    </div>
+	
+		</div>
+		
+		<!--indexW mt10 ie6 fresh 结束-->
+		
+		<!--indexW mt11 开始-->
+		<div id="indexW_mt3">
+			<div class="indexW_mt3">
+				<a href="#">
+					<img src="../img/index/indexW_mt11Img.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<!--indexW mt11 结束-->
+		
+		
+		<!--indexW mt12 ie6 fresh 开始-->
+		  <div id="indexW_mt4">
+			
+			<div class="indexW_mt4">
+		         <div class="category">
+		         	<ul class="mTitle" style="background:#D12E49">
+						<li>
+							<div class="cir"></div>
+							<h2>
+								<em></em>
+								<a  class="trackref" href="#" >休闲</a>&nbsp;&nbsp;
+								<a  class="trackref" href="#" >零食</a>
+							</h2>
+						</li>
+					</ul>
+					<div class="Cont"> 
+						<a href="#">
+							<img src="../img/index/chocolate.jpg" />
+						</a>
+					</div>
+		         </div>
+		         <div class="sfRight">
+		         	  <div class="subCont">
+		         	  	   <ul class="pList">
+		         	  	   	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg4_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   			
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg4_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg4_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg4_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+                                
+                                	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg4_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg4_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg4_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg4_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+		         	  	   </ul>
+		         	  </div>
+		         	  
+		         	  <div class="redge">
+		         	  	    <ul class="rHot">
+		         	  	    	<li>
+		         	  	    		<a href="#">曲奇</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">曲奇</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">曲奇</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">曲奇</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">曲奇</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">曲奇</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">曲奇</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">曲奇</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">曲奇</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    </ul>
+		         	  	    
+		         	  	    <div class="rimg">
+		         	  	    	<a href="#" class="trackref"><img src="../img/index/trackrefImg3.jpg"></a>
+		         	  	        <div class="rbutton">
+		         	  	        	<a ></a>
+		         	  	        </div>
+		         	  	    </div>
+		         	  	    
+		         	  </div>
+		         </div>
+		    </div>
+	
+		</div>
+		
+		<!--indexW mt12 ie6 fresh 结束-->
+		
+		
+			
+		<!--indexW mt13 开始-->
+		<div id="indexW_mt3">
+			<div class="indexW_mt3">
+				<a href="#">
+					<img src="../img/index/indexW_mt13Img.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<!--indexW mt13结束-->
+		
+		
+		<!--indexW mt14 ie6 fresh 开始-->
+		  <div id="indexW_mt4">
+			
+			<div class="indexW_mt4">
+		         <div class="category">
+		         	<ul class="mTitle" style="background:#F08C18">
+						<li>
+							<div class="cir"></div>
+							<h2>
+								<em></em>
+								<a  class="trackref" href="#" >牛奶</a>&nbsp;&nbsp;
+								<a  class="trackref" href="#" >蛋饮</a>
+							</h2>
+						</li>
+					</ul>
+					<div class="Cont"> 
+						<a href="#">
+							<img src="../img/index/teat.jpg" />
+						</a>
+					</div>
+		         </div>
+		         <div class="sfRight">
+		         	  <div class="subCont">
+		         	  	   <ul class="pList">
+		         	  	   	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg6_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   			
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg6_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg6_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg6_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+                                
+                                	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg6_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg6_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg6_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg6_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+		         	  	   </ul>
+		         	  </div>
+		         	  
+		         	  <div class="redge">
+		         	  	    <ul class="rHot">
+		         	  	    	<li>
+		         	  	    		<a href="#">咖啡</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">咖啡</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">咖啡</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">咖啡</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">咖啡</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">咖啡</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">咖啡</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">咖啡</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">咖啡</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    </ul>
+		         	  	    
+		         	  	    <div class="rimg">
+		         	  	    	<a href="#" class="trackref"><img src="../img/index/trackrefImg5.jpg"></a>
+		         	  	        <div class="rbutton">
+		         	  	        	<a ></a>
+		         	  	        </div>
+		         	  	    </div>
+		         	  	    
+		         	  </div>
+		         </div>
+		    </div>
+	
+		</div>
+		
+		<!--indexW mt14 ie6 fresh 结束-->
+		
+		<!--indexW mt15 开始-->
+		<div id="indexW_mt3">
+			<div class="indexW_mt3">
+				<a href="#">
+					<img src="../img/index/indexW_mt15Img.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<!--indexW mt15结束-->
+		
+		
+		<!--indexW mt16 ie6 fresh 开始-->
+		  <div id="indexW_mt4">
+			
+			<div class="indexW_mt4">
+		         <div class="category">
+		         	<ul class="mTitle" style="background:#78B270">
+						<li>
+							<div class="cir"></div>
+							<h2>
+								<em></em>
+								<a  class="trackref" href="#" >酒水</a>&nbsp;&nbsp;
+								<a  class="trackref" href="#" >饮料</a>
+							</h2>
+						</li>
+					</ul>
+					<div class="Cont"> 
+						<a href="#">
+							<img src="../img/index/wine.jpg" />
+						</a>
+					</div>
+		         </div>
+		         <div class="sfRight">
+		         	  <div class="subCont">
+		         	  	   <ul class="pList">
+		         	  	   	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg7_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   			
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg7_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg7_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg7_1.jpg">
+					  	  	   		<div class="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+                                
+                                	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg7_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   <li><a href="#">
+					  	  	   		<img src="../img/index/pListimg7_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车</a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg7_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+					  	  	   	
+					  	  	   	<li><a href="#">
+					  	  	   		<img src="../img/index/pListimg7_1.jpg">
+					  	  	   		<div class="btncar" id="btncar">
+					  	  	   			<a id="car">加入购物车 </a>
+					  	  	   		</div>
+					  	  	   		<div class="title-a">
+					  	  	   			<a href="#">佳沛 阳光金奇异果6个</a>
+					  	  	   		</div>
+					  	  	   		<div class="price"><sup>￥</sup>
+					  	  	   			29.9</div>
+					  	  	   	</a></li>
+		         	  	   </ul>
+		         	  </div>
+		         	  
+		         	  <div class="redge">
+		         	  	    <ul class="rHot">
+		         	  	    	<li>
+		         	  	    		<a href="#">百龄坛</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">百龄坛</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">百龄坛</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">百龄坛</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">百龄坛</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">百龄坛</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    	
+		         	  	    	
+		         	  	    	<li>
+		         	  	    		<a href="#">百龄坛</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">百龄坛</a>
+		         	  	    	</li>
+		         	  	    	<li>
+		         	  	    		<a href="#">百龄坛</a>
+		         	  	    	</li>
+		         	  	    	
+		         	  	    </ul>
+		         	  	    
+		         	  	    <div class="rimg">
+		         	  	    	<a href="#" class="trackref"><img src="../img/index/trackrefImg6.jpg"></a>
+		         	  	        <div class="rbutton">
+		         	  	        	<a ></a>
+		         	  	        </div>
+		         	  	    </div>
+		         	  	    
+		         	  </div>
+		         </div>
+		    </div>
+	
+		</div>
+		
+		<!--indexW mt16 ie6 fresh 结束-->
+		
+		<!--indexW mt17 开始到底层-->
+		<div id="indexW_mt3">
+			<div class="indexW_mt3">
+				<a href="#">
+					<img src="../img/index/indexW_mt17Img.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<!--indexW mt17结束到底层-->
+		
+		
+		<!--文章-->
+		<!--indexW mt2 textlist-->
+	<div id="indexW_textlist">
+		
+	  <div class="indexW_textlist">
+         <div class="zhiwei">
+			<div class="caption">
+				<p>优选味道</p>
+			</div>
+			<div class="slide">
+					<a href="#">
+						<img src="../img/index/text.jpg"/>
+					</a>
+			</div>
+			
+			<div class="info">
+				<p>
+					<a href="#"  title="花草茶 来自大自然的恩惠">花草茶 来自大自然的恩惠</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_2" class="trackref"  target="_blank" title="酒桌礼仪：斟酒的讲究">酒桌礼仪：斟酒的讲究</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_3" class="trackref"  target="_blank" title="30分钟 暖心慢炖红酒鸡腿">30分钟 暖心慢炖红酒鸡腿</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_4" class="trackref" rel="nofollow" href="#"  title="拉弗尔庄园（花庄）">拉弗尔庄园（花庄）</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_5" class="trackref" rel="nofollow" href="#"  title="喜欢甜酒 何罪之有？">喜欢甜酒 何罪之有？</a>
+				</p>
+			</div>
+		</div>
+		
+		 <div class="zhiwei">
+			<div class="caption">
+				<p>优选味道</p>
+			</div>
+			<div class="slide">
+					<a href="#">
+						<img src="../img/index/text.jpg"/>
+					</a>
+			</div>
+			
+			<div class="info">
+				<p>
+					<a href="#"  title="花草茶 来自大自然的恩惠">花草茶 来自大自然的恩惠</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_2" class="trackref"  target="_blank" title="酒桌礼仪：斟酒的讲究">酒桌礼仪：斟酒的讲究</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_3" class="trackref"  target="_blank" title="30分钟 暖心慢炖红酒鸡腿">30分钟 暖心慢炖红酒鸡腿</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_4" class="trackref" rel="nofollow" href="#"  title="拉弗尔庄园（花庄）">拉弗尔庄园（花庄）</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_5" class="trackref" rel="nofollow" href="#"  title="喜欢甜酒 何罪之有？">喜欢甜酒 何罪之有？</a>
+				</p>
+			</div>
+		</div>
+		
+		 <div class="zhiwei">
+			<div class="caption">
+				<p>优选味道</p>
+			</div>
+			<div class="slide">
+					<a href="#">
+						<img src="../img/index/text.jpg"/>
+					</a>
+			</div>
+			
+			<div class="info">
+				<p>
+					<a href="#"  title="花草茶 来自大自然的恩惠">花草茶 来自大自然的恩惠</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_2" class="trackref"  target="_blank" title="酒桌礼仪：斟酒的讲究">酒桌礼仪：斟酒的讲究</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_3" class="trackref"  target="_blank" title="30分钟 暖心慢炖红酒鸡腿">30分钟 暖心慢炖红酒鸡腿</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_4" class="trackref" rel="nofollow" href="#"  title="拉弗尔庄园（花庄）">拉弗尔庄园（花庄）</a>
+				</p>
+				<p>
+					<a name="sfbest_hp_hp_article_5" class="trackref" rel="nofollow" href="#"  title="喜欢甜酒 何罪之有？">喜欢甜酒 何罪之有？</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+     <div class="foot"> </div>
+	</body>
+
+</html>

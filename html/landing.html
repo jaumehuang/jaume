@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/rest.css" />
+		<link rel="stylesheet" href="../css/landing.css" />
+		<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" />
+	    <link rel="stylesheet" href="../css/footer.css" />
+	    <script type="text/javascript" src="../js/jquery-2.1.1.min.js" ></script>
+	     <!--2.引入插件-->
+		 <script type="text/javascript" src="../js/jquery.validate.js" ></script>
+		 <!-- 3.添加语言包 -->
+		<script type="text/javascript" src="../js/jquery.validate.messages_zh.js"></script>
+	    <!--  添加cookie-->
+	    <script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+	   <script>
+	    	$(function(){
+	    		
+	    		var f1=false;
+	    		var f2=false;
+	    		var f3=false;
+	    		$(".foot").load("footer.html?="+Math.random());
+	    		 //随机数
+	              
+	              $(".check").click(function(){
+	              	var str=""
+	              	for(var i=0;i<4;i++){
+	              		str+=Math.floor(Math.random()*10)
+	              	}
+	              	 $(this).text(str);
+	              })
+	              
+	             
+	              
+	              //判断验证码
+	              $(".safety").blur(function(){
+	              	  
+	              	  if($(this).val()==$(".check").text()){
+	              	     
+	              	  	$(".textcheck").text("");
+	              	  	f3=true;
+	              	  }else{
+	              	  	$(".textcheck").text("验证码有误")
+	              	  }
+	              	
+	              })
+	              
+	              //判断是否可以登录
+	              
+	             $(".btndel").click(function(){
+	             	
+	             	 var name=$(".name").val()
+	                 var password=$(".password").val()
+	                 
+	                 var name= $.cookie();
+	             	
+	             	
+	             	
+	             })
+	             
+	             
+	              var name=$(".name_2").val();
+	              var password=$(".password_2").val();
+	              
+	              var name_2= $.cookie("name");
+	              var password_2= $.cookie("password");
+	              
+	              //对账户进行验证
+	              
+	              $(".name_2").keyup(function(){
+	              	 var name=$(".name_2").val();
+	              	  for(var i=0;i<name.length;i++){
+	              	  	
+	              	  	  if(name!=name_2){
+	              	  	  	
+	              	  	  	 $(".name_2").siblings("i").removeClass("fa fa-user").addClass("fa fa-close");
+	              	  	  }else{
+	              	  	  	
+	              	  	  	 $(".name_2").siblings("i").removeClass("fa fa-close").addClass("fa fa-check");
+	              	  	  	 
+	              	  	  	 f1=true;
+	              	  	  }
+	              	  	
+	              	  }
+	             
+	              })
+	              
+	              
+	              
+	              $(".password_2").keyup(function(){
+	              	
+	                var password=$(".password_2").val();
+	                
+	                for(var i=0;i<password.length;i++){
+	                	
+	                	if(password !=password_2){
+	                		
+	                		$(".password_2").siblings("i").removeClass("fa fa-lock").addClass("fa fa-close")
+	                	}else{
+	                		
+	                		$(".password_2").siblings("i").removeClass("fa fa-close").addClass("fa fa-check")
+	                	    f2=true;
+	                	}
+	                	
+	                	
+	                }
+	             
+	              	
+	              })
+	              
+	              //登录
+	              
+	              $(".btndel").click(function(){
+	              	
+	              	var tt=confirm("登录成功是否进入购物？")
+	              	if(f1&&f2&&tt&&f3){
+	              		
+	              		
+	              		window.location.href="index.html"
+	              
+	              	}else{
+	              		
+	              		alert("登录失败")
+	              	}
+	             
+	              })
+	              
+	              
+	              
+	              
+	              
+	             console.log( $.cookie("1212"))
+	             
+	              
+	              
+	              
+	              
+	    	})
+	    </script>
+	</head>
+	
+	<body id="login">
+		<div id="login_a">
+		   <div class="header">
+				<a href="#" class="lg">
+					<img src="../img/login/logo.png" />
+					<span>欢迎登录</span>
+				</a>
+        
+			</div>
+			<div class="login_main">
+				 
+				 <div class="pic">
+				 	<a href="#">
+				 		<img src="../img/login/login.jpg"/>
+				 	</a>
+				 </div>
+				 
+				 <div class="login">
+				 	 <div class="login_header">
+				 	 	 <span>您还未登录</span>
+				 	 	 <a href="login.html">免费注册</a>
+				 	 </div>
+				 	 <div class="logincon">
+				 	 	<ul class="loginnav">
+				 	 		<li>优选账号</li>
+				 	 		<li>顺手付账号</li>
+				 	 		<li>速运账号</li>
+				 	 	</ul>
+				 	 	<div class="start">
+				 	 
+					 	 	 <form class="landing">
+					 	 		
+					 	 		<ul>
+					 	 			<li>
+					 	 				<p>手机/验证邮箱/用户名</p>
+					 	 				<label>
+					 	 					<input type="text" class="name_2">
+					 	 					<i class="fa fa-user"></i>
+					 	 				</label>
+					 	 			</li>
+					 	 			<li>
+					 	 				<p>登录密码</p>
+					 	 				<label>
+					 	 					<input type="text" class="password_2"/>
+					 	 					<i class="fa  fa-lock" id="i"></i>
+					 	 				</label>
+					 	 			</li>
+					 	 			<li class="last">
+		
+	                                    <input type="text" class="safety"/>
+					 	 				
+					 	 				<span class="check">asas</span>
+					 	 				<span class="textcheck" style="color: red; font-size:8px ;"></span>
+					 	 			</li>
+					 	 			<div style="clear: both;"></div>
+					 	 			<li class="btn">
+					 	 				
+		                                <p ><a href="#">忘记密码?</a></p>
+	                                    
+	                                    <input type="button" class="btndel" value="登录"/>
+					 	 			
+					 	 			</li>
+					 	 		</ul>
+					 	 		
+					 	 	</form>
+					 	 </div>	
+				 	 	<div class="blink">
+				 	 		<p>合作网站</p>
+				 	 		<ul>
+				 	 			<li><a href="#">QQ</a></li>
+				 	 			<li><a href="#">新浪微博</a></li>
+				 	 			<li><a href="#">腾讯微博</a></li>
+				 	 			<li><a href="#">支付宝</a></li>
+				 	 		</ul>
+				 	 	</div>
+				 	
+				 	 </div>
+				 </div>
+			</div>
+	   </div>
+	   <div class="foot"></div>
+	</body>
+</html>

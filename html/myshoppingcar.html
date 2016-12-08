@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/rest.css" />
+		<link rel="stylesheet" href="../css/myshoppingcar.css" />
+		<script type="text/javascript" src="../js/Nav.js" ></script>
+		<script type="text/javascript" src="../js/TopMenu.js" ></script>
+		<script type="text/javascript" src="../js/jquery-2.1.1.min.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/car_cookie.js" ></script>
+		<link rel="stylesheet" href="../css/header.css" />
+		
+		
+	    <script>
+			$(function(){
+			
+				$(".foot").load("footer.html?="+Math.random())
+				TopMenu.leftMove()
+				Nav.sort();
+			    car();
+				var name= $.cookie('name')
+				
+				$("#landing").text(name);
+				
+			})
+		</script>
+	</head>
+	<body>
+					<!--toppromo 开始-->
+		<!--<div class="toppromo">
+			<div class="banner">
+				<a href="#"></a>
+			</div>
+			<span class="close"></span>
+		</div>
+
+		<div class="guolv" style="height:450px"></div>-->
+
+		<!--toppromo 结束-->
+		<!--topMenu开始-->
+		
+		<div class="head"></div>
+		
+		<div class="TopMenu">
+
+			<div class="topMenu">
+
+				<ul class="topMenu_left">
+					<li class="frist">冷链配送 99元顺丰到家 送至：</li>
+					<li class="last">
+						<span class="city_title">广州</span>
+						<b></b>
+						<span class="outlst">
+					<span class="blank"></span>
+						</span>
+
+					</li>
+				</ul>
+				<ul class="topMenu_right">
+					<li>嘿，欢迎来顺丰优选！
+						<span id="landing">
+							<a href="landing.html" alt="_blank">请登录</a>
+						    <a href="login.html" alt="_blank">免费注册</a>
+						</span>
+						
+					</li>
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<li>
+						<a href="#">我的优选</a>
+					</li>
+					<li><s></s>
+						<a href="#">移动客户端</a>
+					</li>
+					<li>
+						<a href="#">帮助中心</a>
+						<b></b>
+					</li>
+					<li>
+						<em>网站导航</em>
+					</li>
+					<li class="weibo">
+						<a></a>
+					</li>
+					<li class="weixin">
+						<a></a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		
+		<div id="header">
+			<div class="header">
+				<div class="logo">
+					<a href="#" class="logo_1"></a>
+					<a href="#" class="logo_2"></a>
+					<a href="#" class="logo_3"></a>
+				</div>
+				
+				<div class="header_right">
+					<img src="../img/mycar/step_01.jpg" />
+				</div>
+			</div>
+		</div>
+		<div class="cartMain">
+			
+			<div class="cartHead">
+				<h3 class="cartMy">我的购物车</h3>
+				<div class="areaShow">
+					<strong class="toTxt">送至：</strong>
+					<div class="store-selector">
+						 上海长宁区
+					</div>
+					<span>提示：请选择您的收货区域，查看更准确的信息</span>
+				</div>
+				<div class="top_jiesuan">
+					
+                                          总计（不含运费）：<span class="cartTopPrice" id="allMoney1">¥611.9</span>    
+				</div>
+			</div>
+			
+			<div id="cartMain">
+				<input type="checkbox" />
+				<ul>
+					<li class="frist">全选</li>
+					<li>商品</li>
+					<li>单价</li>
+					<li>优惠</li>
+					<li>数量</li>
+					<li>重量(含包装)</li>
+					<li>小计</li>
+					<li>库存状态</li>
+					<li>操作</li>
+				</ul>
+			</div>
+			
+			<div class="cartTbody">
+				
+				<input type="checkbox"/>
+				<span>优选商品</span>
+			</div>
+			
+			<table border="1">
+				
+				
+			</table>
+			
+			<div class="cartOrderCount">
+				<div class="cartButtons">
+					<span>删除购物车的商品</span>
+					<span>清空购物车</span>
+				</div>
+				<div class="cartTotalItem">
+					重量总计：6.95kg（含包装） （不含运费）      商品总计：¥<span>611.9</span>
+				</div>
+			</div>
+			<div class="cartJsuan">
+                 <input  class="goshop" value="继续购物" type="button">
+                  <input  class="jiesuan youxuan" value="去结算" type="button">
+             </div>
+			
+		</div>
+	
+	</body>
+</html>

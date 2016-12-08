@@ -1,0 +1,611 @@
+.banner a,.topMenu,.header,.navmenu,.beatiful,.indexW_mt2,.indexW_mt3,.indexW_mt4,.indexW_textlist{
+	margin: 0 auto;
+	width:1200px;
+}
+
+
+/*  <!--slide show 开始-->*/
+
+#show{
+	height:480px;
+	width:1428px;
+	position:relative;
+	margin-bottom: 20px ;
+	
+}
+/*.slideshow{
+	
+}*/
+#myCarousel {
+	height:480px;
+	width:1000px;
+	margin-left:275px ;
+	overflow: hidden;
+	z-index: 10000px;
+	
+	
+}
+#show   #showimg {
+	width:260px;
+	height:462px;
+	z-index: 10000;
+	position: absolute;
+	left:1130px;
+	top:0;
+}
+#show #showimg li{
+	height:185px;
+	width:260px;
+	margin-bottom:4px ;
+	
+}
+.indexbg{
+	position:absolute;
+	left:0;
+	top:800px;
+	width:300px;
+	height:480px;
+	overflow: hidden;
+	z-index: 0;
+}
+.indexbg dl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 480px;
+    width:300px;
+    overflow: hidden;
+    z-index: 0;
+}
+.indexbg dd {
+    height: 480px;
+    float: left;
+     z-index: 100;
+}
+#myCarousel .nav-list{
+	position: absolute;
+	z-index: 100;
+	left: 236px;
+	top:444px;
+	
+}
+#myCarousel .nav-list li {
+	float: left;
+	background:#808080;
+	height:28px;
+	width:28px;
+	border-radius:50% ;
+	margin-right:10px ;
+	color:#fff;
+	line-height: 28px;
+	text-align: center;
+}
+
+#myCarousel .nav-list li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*  <!--slide show 结束-->*/
+
+/*<!--indexW mt1开始-->*/
+#indexW{
+	height:487px;
+	background: url(../img/index/thefifthyear.png) center top no-repeat;
+	z-index: 10px;
+	margin-top:55px ;
+}
+.Mandatory{
+	margin-top:55px ;
+	height: 487px;
+	/*z-index: 10;*/
+}
+.beatiful{
+	height:487px;
+	width:1190px;
+}
+.beatifulLeft{
+	float:left;
+	height:460px;
+	width:954px;
+}
+.beatifulLeft .bt{
+	height:460px;
+	width:954px;
+	margin-top:10px ;
+	
+}
+.beatifulLeft .bt li{
+	float: left;
+	position: relative;
+	border: 1px solid #E8E8E8;
+}
+.beatifulLeft .price{
+	position:absolute;
+	left:24px;
+	top:73px;
+	color: red;
+}
+.beatifulLeft h2{
+	height: 14px;
+	width:1190px;
+	padding:0;
+	margin: 0;
+	font-size:14px ;
+	
+}
+.beatifulLeft span{
+	width:118px;
+	height:14px;
+	display: inline-block;
+	margin-left:15px ;
+	background: url(../img/index/index_icon_new.png) no-repeat -29px -333px;
+}
+
+.bt .btncar{
+	height: 23px;
+	width:160px;
+	background: forestgreen;
+	margin-left:38px ;
+	position:absolute;
+	left:0;
+	top:235px;
+	cursor: pointer;
+	display: none;
+}
+.bt #btncar{
+	height: 23px;
+	width:160px;
+	background: forestgreen;
+	margin-left:38px ;
+	position:absolute;
+	left:0;
+	top:175px;
+	
+}
+.bt .btncar #car{
+	display: block;
+	height:24px;
+	width:100px;
+	margin-left:40px ;
+	font-size:8px;
+	color: #fff;
+	text-indent:16px ;
+	line-height: 24px;
+	cursor: pointer;
+	background:url(../img/index/indexsprite.png) no-repeat -66px -177px;
+}
+
+.beatifulright{
+	height:458px;
+	width:222px;
+	float: right;
+	margin-top:26px ;
+	border: 1px solid gray;
+	
+}
+.beatifulimg{
+	height:300px;
+	width:222px;
+	
+	
+}
+.newimg{
+	width:201px;
+	height:159px;
+	margin-left:8px ;
+}
+ .newimg .retitle{
+	width:212px;
+	height:23px;
+	position:relative;
+	border-bottom: 1px dashed  darkgray;
+	
+	
+}
+.retitle h3{
+	
+	margin: 0;
+	padding:0;
+	font-size:13px ;
+	line-height: 23px;
+	color: #2E2F2F;
+	
+
+}
+.retitle .more{
+	display: block;
+	height:10px;
+	position:absolute;
+	right:0;
+	top:8px;
+	font-size:12px ;
+	color: gray;
+	
+}
+.newimg ul li{
+	margin-top:5px ;
+}
+ .newimg ul li a{
+ 	font-size:10px
+ }
+/*<!--indexW mt1结束-->*/
+
+/*<!--indexW mt2开始-->*/
+  #indexW_mt2{
+  	height:360px;
+  	margin-top:34px ;
+  }
+  .indexW_mt2{
+  	height:360px;
+  }
+  .timedbuy{
+  	height:360px;
+  	width:956px;
+  	float: left;
+  	border: 1px solid lightgray;
+  }
+  
+  .ttop{
+  	width:955px;
+  	height:62px;
+  	background:#FF7031;
+  	padding:20px 16px 0 16px;
+  	padding-left:20px ;
+  	position:relative;
+  }
+  .ttop .clock{
+  	height:34px;
+  	width:31px;
+  	display: block;
+  	margin-left:12px ;
+  	margin-top:-4px ;
+  	float:left;
+  	background:url(../img/index/paid_bg.png) no-repeat -39px -266px;
+  	
+  }
+  .t_jd{
+  	height:28px;
+  	width:111px;
+  	display: inline-block;
+  	float:left;
+     text-indent: 10px;
+     font-size:16px;
+     line-height: 28px;
+     color: #fff;
+     font-weight: bolder;
+  	/*background:url(../img/index/index_icon_new.png) no-repeat 204px 319px*/
+  }
+  .ttl{
+  	  height:28px;
+  	  width:44px;
+  	  float: left;
+  	  margin-left:20px ;
+  	  text-indent: 10px;
+  	  color:#FFDBA7;
+  	  line-height: 28px;
+  	 }
+  .tbList{
+  	height:266px;
+  	width:947px;
+  }
+  .time ul{
+  	position:absolute;
+  	left:239px;
+  	top:11px;
+  }
+  .time ul li{
+  	float:left;
+  	font-size:24px ;
+  	color: #fff;
+  	line-height: 38px;
+  	text-align: center;
+  	font-weight: bolder;
+  	font: "微软雅黑";
+  	
+  }
+  .time ul .num{
+  	 height:40px;
+  	 width:38px;
+  	 background: url(../img/index/paid_bg.png) -185px -217px no-repeat;
+  	 margin-right:10px ;
+  }
+  .next{
+  	height:28px;
+  	width:100px;
+  	float: right;
+  	text-indent: 20px;
+  	font-size:18px ;
+  	color: #fff;
+  }
+  .nowCon{
+  	margin-top:12px ;
+  }
+  .nowCon li{
+  	width:168px;
+  	height:260px;
+  	overflow: hidden;
+  	float: left;
+  	margin-left:20px ;
+  }
+  .pimg a img{
+  	height:166px;
+  	width:164px;
+  	border: 1px solid lightgray;
+  	background:red;
+  	display: block;
+  	
+  }
+  .nowCon .title-a a{
+  	width:166px;
+  	height:18px;
+  	font-size:12px;
+  	color:#000;
+  	display: block;
+  	text-align: center;
+  	
+  }
+  .pt-price{
+  	width:168px;
+  	height:18px;
+  	
+  }
+  .pt-price:after{
+  	 clear: both;
+  }
+   .pt-price .fl_p1{
+   	width:34px;
+   	height:18px;
+   	float: left;
+   }
+   .pt-price .fr_p2{
+   	width:34px;
+   	height:18px;
+   	float: left;
+   	text-decoration: line-through;
+   	color:bcbcbc;
+   	margin-left:80px ;
+   }
+   .pt-price .price{
+   	width:166px;
+   	height:22px;
+   }
+   .nowCon .rushBuy{
+    	width:166px;
+    	height:28px;
+    	margin-top:8px ;
+    	background:#ff7031;
+    	display: block;
+    	text-align: center;
+    	line-height: 28px;
+    }
+    
+    .rSide2{
+  	height:320px;
+  	width:222px;
+  	float:left;
+  	margin-left:20px ;
+  }
+/*<!--indexW mt2结束-->*/
+
+/*<!--indexW mt3开始-->*/
+#indexW_mt3{
+	height:100px;
+	margin-top:30px ;
+	
+}
+.indexW_mt3{
+	height:100px;
+	
+}
+
+/*<!--indexW mt3结束-->*/
+
+/*<!--indexW mt4开始-->*/
+#indexW_mt4{
+	
+	height:470px;
+	margin-top:30px ;
+}
+.indexW_mt4{
+	height:470px;
+	
+}
+.category{
+	height:470px;
+	width:250px;
+	float: left;
+}
+.category .mTitle{
+	width:240px;
+	height:50px;
+	background:#76AC25;
+	margin-bottom:0 ;
+}
+.category .mTitle:hover{
+	opacity: 0.6;
+}
+.category .mTitle h2{
+	width:240px;
+	height:50px;
+	line-height:50px ;
+	font-size:16px;
+	margin: 0;
+	padding:0;
+	display: block;2
+	
+}
+.category .mTitle h2 a{
+	color: #fff;
+}
+.category .mTitle h2 em{
+	width:15px;
+	width:16px;
+	margin-top:16px ;
+	margin-left:68px ;
+	margin-right:8px ;
+	float: left;
+	background:url(../img/index/index_icon_new.png) no-repeat -57px -295px;
+}
+.category .Cont img{
+	height:400px;
+	width:250px;
+	display: block;
+	margin-left:-10px ;
+}
+ .indexW_mt4 .sfRight{
+ 	width:950px;
+ 	height:469px;
+ 	
+ 	float:left;
+ }
+.sfRight .subCont{
+	height:479px;
+	width:710px;
+	padding: 10px 7px 10px 9px;
+	float: left;
+	border-bottom: 1px solid lightgray;
+	
+
+}
+.sfRight .subCont  .pList{
+	width:710px;
+}
+.sfRight .subCont  .pList li{
+	float: left;
+	height:210px;
+	width:160px;
+	padding:8px;
+	position: relative;
+	margin-left:10px ;
+}
+.sfRight .subCont  .pList li img{
+	display: block;
+	height:160px;
+	width:160px;
+}
+.sfRight .subCont .btncar{
+	position: absolute;
+	left:8px;
+	top:140px;
+	width:160px;
+	height:24px;
+	background:#76ac25;
+}
+.sfRight .subCont .btncar #car {
+	
+	display: block;
+	height:24px;
+	width:100px;
+	margin-left:40px ;
+	font-size:8px;
+	color: #fff;
+	text-indent:16px ;
+	line-height: 24px;
+	cursor: pointer;
+	background:url(../img/index/indexsprite.png) no-repeat -66px -177px;
+	
+}
+.sfRight .subCont .title-a a{
+	color:#666666;
+	font-size:12px;
+}
+.sfRight .subCont .price{
+	color: red;
+}
+.sfRight  .redge{
+	width:220px;
+	height:419px;
+	background:#F4F4F4;
+	float:left;
+}
+.sfRight  .redge .rHot{
+	width:205px;
+	height:189px;
+	margin-left:15px ;
+	margin-top:25px ;
+}
+.sfRight  .redge .rHot li{
+	height:55px;
+	width:55px;
+	margin: 4px;
+	border-radius:50% ;
+	float:left;
+	line-height: 55px;
+	text-align: center;
+	background: url(../img/index/index_icon_new.png)  no-repeat;
+}
+.sfRight  .redge .rHot a{
+	
+	color: #333333;
+}
+.sfRight  .redge .rHot li:hover{
+	background:#76AC25;
+	
+}
+.sfRight  .redge  .rimg{
+	width:220px;
+	height:89px;
+	position: relative;
+	padding-top:24px
+}
+ .sfRight  .redge  .trackref{
+ 	display: block;
+ }
+.sfRight  .redge  .rbutton {
+	height:25px;
+	width:25px;
+	margin-top:-166px ;
+	margin-left:15px ;
+	z-index: 333;
+	position:absolute;
+	left:0;
+	top:250px;
+	cursor: pointer;
+    background:url(../img/index/index_icon_new.png) -204px 0;
+}
+/*<!--indexW mt4结束-->*/
+
+/*/indexW_textlist*开始/*/
+ #indexW_textlist{
+ 	height:200px;
+ 	margin-top:32px ;
+ }
+.indexW_textlist{
+	height:200px;
+}
+.indexW_textlist .zhiwei{
+	
+	height:200px;
+	width:400px;
+	float: left;
+   
+}
+ .indexW_textlist .caption{
+ 	
+ 	width:390px;
+ 	height:25px;
+ 	border-bottom:1px solid #EAEAEA ;
+ }
+ 
+  .indexW_textlist  .slide{
+  	height:120px;
+  	width:170px;
+  	margin-top:20px ;
+  	float: left;
+  }
+ .indexW_textlist  .info{
+ 	width:145px;
+ 	height:100px;
+ 	margin-top:20px ;
+ 	margin-left:10px ;
+ 	
+ 	float: left;
+ }
+ 
+  .indexW_textlist  .info a{
+  	font-size:12px;
+ 	color:#000;
+  }
+ /*indexW_textlist*结束/

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" href="../css/rest.css" />
+		<link rel="stylesheet" href="../css/header.css" />-->
+		<script type="text/javascript" src="../js/Nav.js" ></script>
+		<script type="text/javascript" src="../js/TopMenu.js" ></script>
+		<script type="text/javascript" src="../js/jquery-2.1.1.min.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/car_cookie.js" ></script>
+		<script>
+			$(function(){
+				TopMenu.leftMove()
+				Nav.sort();
+				car();
+				var name= $.cookie('name')
+				
+				$("#landing").text(name);
+				
+			})
+		</script>
+	</head>
+	<body>
+				<!--<!--toppromo 开始-->
+		<!--<div class="toppromo">
+			<div class="banner">
+				<a href="#"></a>
+			</div>
+			<span class="close"></span>
+		</div>
+
+		<div class="guolv" style="height:450px"></div>-->
+
+		<!--toppromo 结束-->
+		<!--topMenu开始-->
+		<div class="TopMenu">
+
+			<div class="topMenu">
+
+				<ul class="topMenu_left">
+					<li class="frist">冷链配送 99元顺丰到家 送至：</li>
+					<li class="last">
+						<span class="city_title">广州</span>
+						<b></b>
+						<span class="outlst">
+					<span class="blank"></span>
+						</span>
+
+					</li>
+				</ul>
+				<ul class="topMenu_right">
+					<li>嘿，欢迎来顺丰优选！
+						<span id="landing">
+							<a href="landing.html" alt="_blank">请登录</a>
+						    <a href="login.html" alt="_blank">免费注册</a>
+						</span>
+						
+					</li>
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<li>
+						<a href="#">我的优选</a>
+					</li>
+					<li><s></s>
+						<a href="#">移动客户端</a>
+					</li>
+					<li>
+						<a href="#">帮助中心</a>
+						<b></b>
+					</li>
+					<li>
+						<em>网站导航</em>
+					</li>
+					<li class="weibo">
+						<a></a>
+					</li>
+					<li class="weixin">
+						<a></a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!--topMenu结束-->
+		<!--header开始-->
+		<div id="head">
+			<div class="header">
+				<div class="logo">
+					<a href="#" id="logo1"></a>
+					<a href="#" id="logo2"></a>
+					<img id="logo3" src="../img/index/logo_word.jpg"></img>
+				</div>
+				<div class="index_promo">
+
+				</div>
+				<div class="search">
+					<form>
+						<input type="text" class="search_txt" />
+						<input type="button" value="搜索" id="btn" />
+					</form>
+					<ul class="search_hot">
+						<li>
+							<a href="#">牛排</a>
+						</li>
+						<li>
+							<a href="#">牛奶</a>
+						</li>
+						<li>
+							<a href="#">酸奶</a>
+						</li>
+						<li>
+							<a href="#">白虾</a>
+						</li>
+						<li>
+							<a href="#">大米</a>
+						</li>
+						<li>
+							<a href="#">猕猴桃</a>
+						</li>
+						<li>
+							<a href="#">榴莲</a>
+						</li>
+					</ul>
+				</div>
+				<div id="shoppingcar">
+					<s class="setcar"></s>
+					<a href="myshoppingcar.html" class="myshoppcar">我的购物车</a>
+					<b>0</b>
+				</div>
+			</div>
+
+		</div>
+		<!--header结束-->
+		<!-- navmenu 开始-->
+		<div id="navmenu">
+			<div class="navmenu">
+				<!--categories种类-->
+				<div class="categories_hover">
+					<div class="dt">
+						精选商品分类
+					</div>
+					<div class="allSort">
+						<div class="book_sort">
+							<div class="sort_a" id="sort">
+								<h3 class="h3_title">
+        			 		 		<span></span>
+        			 		 	   <a>海鲜肉类</a>
+        			 		 	</h3>
+								<ul>
+									<li>
+										<a href="#">大闸蟹</a>
+									</li>
+									<li>
+										<a href="list.html">牛肉</a>
+									</li>
+									<li>
+										<a href="#">羊肉</a>
+									</li>
+									<li>
+										<a href="#">虾</a>
+									</li>
+									<li>
+										<a href="#">鱼</a>
+									</li>
+								</ul>
+							</div>
+							<div class="sort_b" id="sort">
+								<h3 class="h3_title">
+        			 		 		<span></span>
+        			 		 	   <a>水果蔬菜</a>
+        			 		 	</h3>
+								<ul>
+									<li>
+										<a href="#">车厘子</a>
+									</li>
+									<li>
+										<a href="#">柚子</a>
+									</li>
+									<li>
+										<a href="#">蔬菜</a>
+									</li>
+									<li>
+										<a href="#">虾</a>
+									</li>
+									<li>
+										<a href="#">鱼</a>
+									</li>
+								</ul>
+							</div>
+							<div class="sort_c" id="sort">
+								<h3 class="h3_title">
+        			 		 		<span></span>
+        			 		 	   <a>熟食蛋奶</a>
+        			 		 	</h3>
+								<ul>
+									<li>
+										<a href="#">熟食</a>
+									</li>
+									<li>
+										<a href="#">速冻食品</a>
+									</li>
+									<li>
+										<a href="#">蔬菜</a>
+									</li>
+									<li>
+										<a href="#">蛋</a>
+									</li>
+									<li>
+										<a href="#">奶</a>
+									</li>
+								</ul>
+							</div>
+							<div class="sort_d" id="sort">
+								<h3 class="h3_title">
+        			 		 		<span></span>
+        			 		 	   <a>酒水饮料</a>
+        			 		 	</h3>
+								<ul>
+									<li>
+										<a href="#">葡萄酒</a>
+									</li>
+									<li>
+										<a href="#">啤酒</a>
+									</li>
+									<li>
+										<a href="#">白酒</a>
+									</li>
+									<li>
+										<a href="#">牛奶</a>
+									</li>
+
+								</ul>
+							</div>
+							<div class="sort_e" id="sort">
+								<h3 class="h3_title">
+        			 		 		<span></span>
+        			 		 	   <a>休闲食品</a>
+        			 		 	</h3>
+								<ul>
+									<li>
+										<a href="#">巧克力</a>
+									</li>
+									<li>
+										<a href="#">坚果</a>
+									</li>
+									<li>
+										<a href="#">大米</a>
+									</li>
+
+								</ul>
+							</div>
+							<div class="sort_f" id="sort">
+								<h3 class="h3_title">
+        			 		 		<span></span>
+        			 		 	   <a>粮油干货</a>
+        			 		 	</h3>
+								<ul>
+									<li>
+										<a href="#">橄榄油</a>
+									</li>
+									<li>
+										<a href="#">大米</a>
+									</li>
+									<li>
+										<a href="#">枣</a>
+									</li>
+
+								</ul>
+							</div>
+							<div class="sort_g" id="sort">
+								<h3 class="h3_title">
+        			 		 		<span></span>
+        			 		 	   <a>冲调茶饮</a>
+        			 		 	</h3>
+								<ul>
+									<li>
+										<a href="#">蜂蜜</a>
+									</li>
+									<li>
+										<a href="#">咖啡</a>
+									</li>
+									<li>
+										<a href="#">麦片</a>
+									</li>
+									<li>
+										<a href="#">茶</a>
+									</li>
+
+								</ul>
+							</div>
+							<div class="sort_h" id="sort">
+								<h3 class="h3_title">
+        			 		 		<span></span>
+        			 		 	   <a>优选国际</a>
+        			 		 	</h3>
+								<ul>
+									<li>
+										<a href="#">奶粉</a>
+									</li>
+									<li>
+										<a href="#">纸尿裤</a>
+									</li>
+									<li>
+										<a href="#">韩妆</a>
+									</li>
+									<li>
+										<a href="#">营养</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						
+					  <!--二级导航-->
+					  
+					   <div id="list">
+					   	   <div class="list_one" >
+						   	   <ul >
+						   	   	 <li class="frist"><a href="#" class="alist">精品肉类</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	   <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   </ul>
+					   	   </div>
+					   	   <div class="list_two">
+						   	    <ul  >
+						   	   	  <li class="frist"><a href="#" class="alist">精品肉类</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	   <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   	  <li><a href="#" class="alist">牛肉</a></li>
+						   	   </ul>
+					   	   </div>
+					   </div>
+						
+
+					</div>
+				</div>
+				<div class="menu1">
+					<ul class="ul">
+						<li class="frist">
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="#">优选生鲜</a>
+						</li>
+						<li>
+							<a href="#">全球美食</a>
+						</li>
+						<li>
+							<a href="#">优选厨房</a>
+						</li>
+						<li>
+							<a href="#">新品尝鲜</a>
+						</li>
+						<li>
+							<a href="#">优选国际</a>
+						</li>
+						<li>
+							<a href="#">企业专区</a>
+						</li>
+						<li>
+							<a href="#">会员频道</a>
+						</li>
+						<li class="ad">
+							<a href="#">
+								<img src="../img/index/dt.jpg" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- navmenu 结束-->
+	</body>
+</html>
