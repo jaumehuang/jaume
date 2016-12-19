@@ -8,47 +8,58 @@
 		<link rel="stylesheet" href="../css/rest.css" />
 		<link rel="stylesheet" href="../css/footer.css" />
 		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../paginationjs-master/dist/pagination.css" />
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="../js/toppromo.js"></script>
 		<script type="text/javascript" src="../js/TopMenu.js"></script>
 		<script type="text/javascript" src="../js/Nav.js"></script>
+		<link rel="stylesheet" href="../css/float.css" />
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="../js/Carousel.js" ></script>
 		<script type="text/javascript" src="../js/shoppingcar.js" ></script>
 		<script type="text/javascript" src="../js/jquery.countdown.js" ></script>
-	<!--	<script type="text/javascript" src="js/jquery.js" ></script>-->
-		
+	    <script type="text/javascript" src="../js/mycar.js" ></script>
+		<script type="text/javascript" src="../js/float.js" ></script>
+		<script type="text/javascript" src="../js/flyshopping.js" ></script>
+		<script type="text/javascript" src="../page_turning/JQ_page.js" ></script>
+		<script type="text/javascript" src="../page_turning/page_turning.js" ></script>
+		<script type="text/javascript" src="../paginationjs-master/dist/pagination.js" ></script>
+		<script type="text/javascript" src="../js/Nav.js" ></script>
 		<script type="text/javascript">
 			$(function() {
 				$(".foot").load("footer.html?="+Math.random());				
+				$(".float").load("rightfloat.html?="+Math.random());
 				$(".header").load("header.html?="+Math.random());	
 				toppromo();
 				shoppingcar();
 				Countdown.init();
 				Carousel();
-				
+			    mycar();
+			    flying();
+			    Nav.sort();
 			})
 		</script>
 	</head>
-
 	<body>
 	    <div class="header"></div>
 		<!--slide show 开始-->
-                           
 		<div id="show">   
-    
+            <div id="nav">
+            	<div class="nav">
+            	  <h3><a href="javascript"  dk-bind="h3"></a></h3>
+	            	 <ul>            	    
+	            	    <li ><a href="list.html" dk-bind="title1"></a></li>
+	            	    <li ><a href="javascript" dk-bind="title2"></a></li>
+	            	    <li ><a href="javascript" dk-bind="title3"></a></li>
+	            	    <li ><a href="javascript" dk-bind="title4"></a></li>
+	            	    <li ><a href="javascript" dk-bind="title5"></a></li>
+	            	 </ul>
+               </div>
+            </div>
 			<div id="myCarousel" class="carousel slide">
 				<!-- 轮播（Carousel）指标 -->
 				<ol class="carousel-indicators">
-					<!--<li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-					<li data-target="#myCarousel" data-slide-to="3"></li>
-					<li data-target="#myCarousel" data-slide-to="4"></li>-->
-					<!--<li data-target="#myCarousel" data-slide-to="5"></li>
-					<li data-target="#myCarousel" data-slide-to="6"></li>
-					<li data-target="#myCarousel" data-slide-to="7"></li>-->
 				</ol>
 			      <!--下标导航-->
 			      <ul class="nav-list">
@@ -89,25 +100,7 @@
 						<img src="../img/index/show5.jpg" alt="Eight slide">
 					</div>
 				</div>
-				<!-- 轮播（Carousel）导航 -->
-				<!--<a class="carousel-control left" href="#myCarousel" data-slide="prev" style="display: block;height: 40px;width:100px;background:red;position: absolute;left:0;top:100px">&lsaquo;</a>
-				<a class="carousel-control right" href="#myCarousel" data-slide="next" style="display: block;height: 40px;width:100px;background:red;position: absolute;left:600px;top:100px">&rsaquo;</a>-->
-                <!--<div class="indexbg" id="indexbg">
-				<dl >
-					<dd style="width: 1423px; background: rgb(111, 181, 67);"></dd>
-					<dd style="width: 1423px; background: rgb(213, 42, 41);"></dd>
-					<dd style="width: 1423px; background: rgb(4, 189, 247);"></dd>
-					<dd style="width: 1423px; background: rgb(227, 224, 219);"></dd>
-					<dd style="width: 1423px; background: rgb(253, 65, 54);"></dd>
-					<dd style="width: 1423px; background: rgb(253, 238, 249);"></dd>
-					<dd style="width: 1423px; background: rgb(77, 64, 52);"></dd>
-					<dd style="width: 1423px;"></dd>
-				</dl>
-			</div>-->
-			 
 			
-			 
-			 
 			</div>
 			 <ul id="showimg">
 				 
@@ -128,10 +121,7 @@
 				 </li>
 				
 			</ul>
-			 
-			
-			
-
+	
 		</div>
 
 		<!--slide show 结束-->
@@ -145,8 +135,8 @@
 				  	  	      <span></span>
 				  	  	   </h2>
 				  	  	   <ul class="bt">
-					  	  	   	<li><a href="#">
-					  	  	   		<img src="../img/index/beatiful1.jpg">
+					  	  	   	<li><a href="">
+					  	  	   		<img src="../img/index/beatiful1.jpg"/>
 					  	  	   		<div class="btncar">
 					  	  	   			<a id="car">加入购物车 </a>
 					  	  	   		</div>
@@ -155,7 +145,7 @@
 					  	  	   	</a></li>
 					  	  	   	
 					  	  	   <li><a href="#">
-					  	  	   		<img src="../img/index/beatiful1.jpg">
+					  	  	   		<img src="../img/index/beatiful1.jpg"/>
 					  	  	   		<div class="btncar">
 					  	  	   			<a id="car">加入购物车</a>
 					  	  	   		</div>
@@ -164,7 +154,7 @@
 					  	  	   	</a></li>
 					  	  	   	
 					  	  	   	<li><a href="#">
-					  	  	   		<img src="../img/index/beatiful1.jpg">
+					  	  	   		<img src="../img/index/beatiful1.jpg"/>
 					  	  	   		<div class="btncar">
 					  	  	   			<a id="car">加入购物车 </a>
 					  	  	   		</div>
@@ -173,7 +163,7 @@
 					  	  	   	</a></li>
 					  	  	   	
 					  	  	   	<li><a href="#">
-					  	  	   		<img src="../img/index/beatiful1.jpg">
+					  	  	   		<img src="../img/index/beatiful1.jpg"/>
 					  	  	   		<div class="btncar">
 					  	  	   			<a id="car">加入购物车 </a>
 					  	  	   		</div>
@@ -182,7 +172,7 @@
 					  	  	   	</a></li>
                                 
                                 	<li><a href="#">
-					  	  	   		<img src="../img/index/btnsmall.jpg">
+					  	  	   		<img src="../img/index/btnsmall.jpg"/>
 					  	  	   		<div class="btncar" id="btncar">
 					  	  	   			<a id="car">加入购物车 </a>
 					  	  	   		</div>
@@ -191,7 +181,7 @@
 					  	  	   	</a></li>
 					  	  	   	
 					  	  	   <li><a href="#">
-					  	  	   		<img src="../img/index/btnsmall.jpg">
+					  	  	   		<img src="../img/index/btnsmall.jpg"/>
 					  	  	   		<div class="btncar" id="btncar">
 					  	  	   			<a id="car">加入购物车</a>
 					  	  	   		</div>
@@ -200,7 +190,7 @@
 					  	  	   	</a></li>
 					  	  	   	
 					  	  	   	<li><a href="#">
-					  	  	   		<img src="../img/index/btnsmall.jpg">
+					  	  	   		<img src="../img/index/btnsmall.jpg"/>
 					  	  	   		<div class="btncar" id="btncar">
 					  	  	   			<a id="car">加入购物车 </a>
 					  	  	   		</div>
@@ -209,7 +199,7 @@
 					  	  	   	</a></li>
 					  	  	   	
 					  	  	   	<li><a href="#">
-					  	  	   		<img src="../img/index/btnsmall.jpg">
+					  	  	   		<img src="../img/index/btnsmall.jpg"/>
 					  	  	   		<div class="btncar" id="btncar">
 					  	  	   			<a id="car">加入购物车 </a>
 					  	  	   		</div>
@@ -1789,7 +1779,10 @@
 		</div>
 	</div>
 </div>
+
      <div class="foot"> </div>
+     
+     <div class="float"></div>
 	</body>
 
 </html>

@@ -4,7 +4,7 @@
 function mycar(){
 	
 	//存储商品的信息
-	var goodimg="Goodimg"
+	var goodimg="Goodimg";
 	var goodtitle="Goodtitle";//记录商品详情
 	var goodprice="Goodprice";//记录商品价格
 	var goodnumber="Goodnumber";//记录商品数量
@@ -50,24 +50,11 @@ function mycar(){
 		
 		
 	}
-	
-	
-	//列表添加商品
-	
-	console.log($("#p-list .list_all").find(".price"))
-	$(".list_all  ").css("background","red")
-	
-	
-	var n=0;
-	
-	$(".pBtn").click(function(e){
-		
-		
+    
+	//商品详情
+	$(".pBtn").click(function(e){	
 		//防止刷新
-		
 		e.preventDefault();
-		
-		n++;
 		//接下来就是获取列表商品的信息了
 	
 		var goodimgX=$(".zoom-jpg").find("img").attr("src");
@@ -76,15 +63,32 @@ function mycar(){
 		
 		var goodpriceX=$(".priceBox").text();
 		
-		var goodnumberX=n;
+		var goodnumberX=$(".pAmount .dp").find("input").val();
 
 		savegood(goodimgX,goodtitleX,goodpriceX,goodnumberX);
-		
-		$.removeCookie("n")
-		
-		$.cookie("n",n,{ expires: 3, path: '/' })
-	
+	    var pBtn = $(this);
+		var img =$(".zoom-jpg").find('img').attr('src');
 	
   });
+  
+  //商品列表
+  
+  $("#p-list .list_all ").on("click",".p-btn",function(event){
+  	
+  	   event.preventDefault();
+  	  
+  	   var goodimgX=$("#p-list .list_all").find("img").attr("src");
+		
+		var goodtitleX=$("#p-list .list_all .title-c").find("a").text();
+		
+		var goodpriceX=$("#p-list .list_all .price").find("strong").text();
+		
+		var goodnumberX=$("#p-list .list_all .p-num").find("input").val();
 
+		savegood(goodimgX,goodtitleX,goodpriceX,goodnumberX);
+  	  
+  	
+  	
+  })
+ 
 }

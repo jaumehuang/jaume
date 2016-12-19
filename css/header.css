@@ -364,7 +364,7 @@
 /*<!--navmenu开始-->*/
 #navmenu{
 	height:34px;
-	border-bottom: 2px solid #679800;
+	border-bottom: 3px solid #679800;
 }
 .navmenu{
 	height:34px;
@@ -389,77 +389,30 @@
 	
 	
 }
-.allSort{
-	height:481px;
-	width:200px;
-	z-index: 200;
-	background: #76ac25;
-	position: absolute;
-	left:0;
-	top:34px;
-	
-}
-.allSort .book_sort{
-	height:464px;
-	width:190px;
-	margin-left:5px;
-	margin-top:8px ;
-	position: relative;
-}
-.allSort #sort{
-	height:58px;
-	width:195px;
-/*	margin-top:20px ;*/
-	
-}
-.allSort #sort  .h3_title{
-	
-	color: #FFFFFF;
-	font-weight: bolder;
-	font-size:12px ;
-	cursor:pointer;
-	padding: 0;
-	margin: 0;
-	
-	
-}
-.allSort .sort_a p{
-	height:22px;
-	width:16px;
-	margin-top:4px;
-	background: url(../img/index/left_lm_m_a.png) no-repeat 0 5px;
-	/*float:left;*/
-	display: inline-block;
-	
-}
-.allSort #sort  a{
-	display: inline-block;
-	color: #FFFFFF;
-	/*float:left;*/
-}
-
-
 .categories_hover #list{
-	height:479px;
+	height:478px;
 	width:600px;
-	background: red;
 	position: absolute;
 	left:200px;;
-	top:2px;
-	color: ;
-	background: #fff;
-	border-bottom:1px solid gray ;
-	border-right:1px solid gray ;
+	top:36px;
 	z-index: 10000;
 	display: none;
+	background:#fff;
+}
+
+#list_img{
+	height:200px;
+	width:560px;
+	margin-top:200px ;
+	margin-left:20px ;
 }
 .categories_hover #list ul{
-	
+	 margin-left:30px ;
 }
 .categories_hover #list .list_one ,.list_two {
 	height:30px;
 	width:600px;
-	margin-top:4px ;
+	margin-top:4px;
 }
 #navmenu .categories_hover #list .list_two .alist{
 	color: gray;
@@ -476,6 +429,36 @@
 	float:left;
 	margin-right:10px ;
 }
+
+ .categories_hover #nav{
+	height:480px;
+	width:200px;
+	background:#76AC25;
+	float: left;
+	overflow: hidden;
+    display: none;
+    z-index: 900000;
+    position: absolute;
+    
+}
+.categories_hover #nav .nav{
+	/*height:480px;*/
+	width:200px;
+	padding-left:16px;
+	/*margin-top:10px ;*/
+	font-size:10px ;
+	margin-bottom:10px ;
+	height:50px;
+	
+}
+ .categories_hover #nav .nav ul li{
+	float:left;
+	margin-right:10px ;
+}
+ .categories_hover #nav .nav a{
+	color: #fff;
+}
+
 /*
 .allSort .sort_b p{
 	height:22px;
@@ -584,6 +567,14 @@
 	width:196px;
 	height:32px;
 	display: block;
+}
+.u-flyer {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 9999;
 }
 /*<!--navmenu结束-->*/
 

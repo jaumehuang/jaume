@@ -3,41 +3,74 @@
 	width:1200px;
 }
 
-
+#fly{
+	z-index: 10000;
+}
 /*  <!--slide show 开始-->*/
 
 #show{
 	height:480px;
-	width:1428px;
+	width:1200px;
 	position:relative;
-	margin-bottom: 20px ;
+	margin: 0 auto;
 	
 }
 /*.slideshow{
 	
 }*/
-#myCarousel {
+#show #nav{
+	height:480px;
+	width:200px;
+	background:#76AC25;
+	float: left;
+
+}
+#show #nav .nav{
+	/*height:480px;*/
+	width:200px;
+	padding-left:16px;
+	/*margin-top:10px ;*/
+	font-size:10px ;
+	margin-bottom:10px ;
+	height:50px;
+}
+#show #nav .nav ul li{
+	float:left;
+	margin-right:10px ;
+}
+#show #nav .nav a{
+	color: #fff;
+}
+
+
+#show #myCarousel {
 	height:480px;
 	width:1000px;
-	margin-left:275px ;
+	/*margin-left:275px ;*/
 	overflow: hidden;
 	z-index: 10000px;
+	float:left;
 	
 	
 }
 #show   #showimg {
 	width:260px;
-	height:462px;
-	z-index: 10000;
+	/*height:462px;*/
+	z-index: 10;
 	position: absolute;
-	left:1130px;
+	left:940px;
 	top:0;
 }
 #show #showimg li{
-	height:185px;
+	height:150px;
 	width:260px;
-	margin-bottom:4px ;
+	margin-bottom:10px ;
 	
+}
+#show #showimg li img{
+	display: block;
+	height:145px;
+	width:240px;
 }
 .indexbg{
 	position:absolute;
@@ -394,6 +427,10 @@
 	height:100px;
 	margin-top:30px ;
 	
+}
+#indexW_mt3 img{
+	width:1180px;
+	display: block;
 }
 .indexW_mt3{
 	height:100px;

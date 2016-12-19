@@ -32,6 +32,27 @@ function detail(){
 		  lens:true //是否显示小图上的透明区域
 	  });
 	
+	//添加商品的数量
+	var i=0;
+	$(".pAmount .dl a").eq(0).on("click",function(event){
+		  i++;
+		  event.preventDefault();
+		  $(this).parent(".dl").siblings(".dp").children("input").val(i);
+		  
+		
+		
+	})
+	//减少商品的数量
+	$(".pAmount .dl a").eq(1).on("click",function(event){
+		 i--;
+		 if(i<=0){
+		 	i=0;
+		 }
+		 event.preventDefault();
+		  $(this).parent(".dl").siblings(".dp").children("input").val(i);
+	
+	})
+	
 	
 	
 }

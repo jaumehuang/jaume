@@ -1,7 +1,7 @@
 var TopMenu = {
     
 	leftMove: function() {
-          console.log("dfdfd")
+     
 		$(".outlst").css({
 			background: "#fff"
 		})
@@ -27,7 +27,7 @@ var TopMenu = {
 //		
 		//鼠标在表单上
         $(".outlst").stop().mouseenter(function(){
-        	console.log("sdsd")
+        
         	$(this).show()
         }).stop().mouseleave(function(){
         	$(this).hide();

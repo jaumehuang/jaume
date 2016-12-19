@@ -11,15 +11,23 @@
 	    <script type="text/javascript" src="../js/detail.js" ></script>
 	    <script type="text/javascript" src="../js/jquery.jqzoom.min.js" ></script>
 	    <link rel="stylesheet" href="../css/footer.css" />
-	    <script type="text/javascript" src="../js/mycar.js" ></script>
+	   
 	    <script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+	    <script type="text/javascript" src="../js/jquery.fly.min.js" ></script>
+	    <script type="text/javascript" src="../js/float.js" ></script>
+	    <script type="text/javascript" src="../js/mycar.js" ></script>
+	    <script type="text/javascript" src="../js/flyshopping.js" ></script>
 	  <script>
 	    	$(function(){
-	    		
+
+	    		$(".float").load("rightfloat.html?="+Math.random())
 	    		$(".header").load("header.html?="+Math.random())
 	    		$(".foot").load("footer.html?="+Math.random())
 	    		detail();
 	    		mycar();
+	    		float();
+	    		flying();
+	    		
 	    		
 	    	})
 	    </script>
@@ -769,5 +777,6 @@
 		<!--详情内容-->
 		
 		<div class="foot"></div>
+		<div class="float"></div>
 	</body>
 </html>

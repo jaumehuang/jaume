@@ -1,0 +1,71 @@
+#float_right{
+	height:210px;
+	width:40px;
+	position: fixed;
+	right: 30px;
+	top:70%;
+	margin: 0 auto;
+	
+}
+
+
+#float_right .float{
+     
+}
+#float_right .float ul li{
+	
+	 height:40px;
+	 width:40px;
+	 margin-top:10px;
+	 cursor: pointer;
+
+}
+#float_right .float ul #shopcar{
+	
+	background:url(../img/float/productList.png)  no-repeat 0 -45px ;
+	position: relative;
+	
+}
+#float_right .float ul #shopcar .car_a{
+	
+	height:20px;
+	width:35px;
+	background:orangered;
+	display: block;
+	position: absolute;
+	top:-8px;
+	left:10px;
+	z-index: 9999900;
+	border-radius:30% ;
+	text-align: center;
+	line-height: 20px;
+	font-size:10px;
+	color: #fff;
+
+}
+#float_right .float ul #foota{
+	
+	
+	background:url(../img/float/productList.png)  no-repeat -42px -82px;;
+}
+#float_right .float ul #phone{
+	
+	
+	background:url(../img/float/productList.png) no-repeat -42px -40px;
+	
+
+	
+}
+
+#float_right .float ul #top{
+	
+	
+	background:url(../img/float/productList.png) no-repeat 0 -82px;;
+	
+	display: none;
+	
+	text-align: center;
+	
+}
+
+.u-flyer{display: block;width: 60px;height: 60px;z-index: 9999;}

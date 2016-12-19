@@ -5,13 +5,17 @@
 		<title></title>
 		<link rel="stylesheet" href="../css/rest.css" />
 		<link rel="stylesheet" href="../css/myshoppingcar.css" />
+		<link rel="stylesheet" href="../paginationjs-master/dist/pagination.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
 		<script type="text/javascript" src="../js/Nav.js" ></script>
 		<script type="text/javascript" src="../js/TopMenu.js" ></script>
 		<script type="text/javascript" src="../js/jquery-2.1.1.min.js" ></script>
 		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
 		<script type="text/javascript" src="../js/car_cookie.js" ></script>
 		<link rel="stylesheet" href="../css/header.css" />
-		
+		<script type="text/javascript" src="../js/jquery.fly.min.js" ></script>
+		<script type="text/javascript" src="../page_turning/page_shop.js"></script>
+		<script type="text/javascript" src="../paginationjs-master/dist/pagination.js"></script>
 		
 	    <script>
 			$(function(){
@@ -20,7 +24,7 @@
 				TopMenu.leftMove()
 				Nav.sort();
 			    car();
-				var name= $.cookie('name')
+				var name= $.cookie('name');
 				
 				$("#landing").text(name);
 				
@@ -28,19 +32,7 @@
 		</script>
 	</head>
 	<body>
-					<!--toppromo 开始-->
-		<!--<div class="toppromo">
-			<div class="banner">
-				<a href="#"></a>
-			</div>
-			<span class="close"></span>
-		</div>
-
-		<div class="guolv" style="height:450px"></div>-->
-
-		<!--toppromo 结束-->
-		<!--topMenu开始-->
-		
+	
 		<div class="head"></div>
 		
 		<div class="TopMenu">
@@ -144,10 +136,51 @@
 				<span>优选商品</span>
 			</div>
 			
-			<table border="1">
-				
+			<table border="1" style="margin-bottom: 10px;">
+				 <tr>
+					<td class='input'><input type='checkbox' /></td>
+					<td>
+						<div class='cart_pimg'>
+							<a href='#'><img src="" dk-bind="img"></a>
+						</div>
+						<div class='cart_pname'>
+							<a href='#'  dk-bind="title"></a>
+						</div>
+					</td>
+					<td>
+						<strong dk-bind="price"> </strong>
+					</td>
+					<td class='kk'>
+						
+					</td>
+					<td><span class='rediuce'>-</span><input class='num' type='text' value="" dk-bind="Number"/>
+						<span class='add'>+</span>
+					</td>
+					<td>
+						<div class='weight'>2kg</div>
+					</td>
+					<td>
+						<div class='total_price'> ¥
+						<span id='total_price'>178</span>
+						</div>
+					</td>
+					
+					<td class='p_1'>现货</td>
+					<td class='p_2'>收藏</td>
+					<td class='p_3'>删除</td>
+				</tr>
 				
 			</table>
+			<!--切换页开始-->
+
+			<div id="wrapper">
+				    <section>
+				        <div class="data-container"></div>
+				        <div id="pagination-demo1" style="margin-left:70% ;">
+				        	 
+				        </div>
+				    </section>
+		   </div>	
 			
 			<div class="cartOrderCount">
 				<div class="cartButtons">
@@ -155,15 +188,16 @@
 					<span>清空购物车</span>
 				</div>
 				<div class="cartTotalItem">
-					重量总计：6.95kg（含包装） （不含运费）      商品总计：¥<span>611.9</span>
+					重量总计：6.95kg（含包装） （不含运费）      商品总计：￥<span>00</span>
 				</div>
 			</div>
 			<div class="cartJsuan">
-                 <input  class="goshop" value="继续购物" type="button">
+                  <input  class="goshop" value="继续购物" type="button">
                   <input  class="jiesuan youxuan" value="去结算" type="button">
              </div>
 			
 		</div>
+		<div class="foot"></div>
 	
 	</body>
 </html>
